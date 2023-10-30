@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://kit.fontawesome.com/6e46578182.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 class="display-4 text-center">
+        <i class="fa-solid fa-bookmark" style="color: #a6cc3c;"></i> Book<span
+        class="text-primary" style="color: #a6cc3c;">Mark</span>Manager</h1>
+
+    <div class="categories-container mt-5">
+        <select id="category-dropdown">
+            <option value="default">Select Category</option>
+            
+        </select>
+        <span id="new-category-input" style="display:none;">
+            <input type="text" id="new-category-name" placeholder="New Category Name">
+        </span>
+        <button id="add-category-button">+</button>
+    </div>
+    <div class="bookmarks-container">
+            
+        </div>
+        
+        
+    </div>
+    <div class="details-container">
+        <h3>Bookmark Details</h3>
+        <div id="bookmark-details">
+            
+        </div>
+    </div>
+    <button id="add-bookmark-button">Add Bookmark</button>
+    <div id="add-bookmark-modal" class="modal">
+        <div id="add-bookmark-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Add Bookmark</h2>
+                <form id="bookmark-form">
+                    <label for="bookmark-title">Title:</label>
+                    <input type="text" id="bookmark-title" required>
+                    <label for="bookmark-url">URL:</label>
+                    <input type="url" id="bookmark-url" required>
+                    <label for="bookmark-description">Description:</label>
+                    <textarea id="bookmark-description"></textarea>
+                    <input type="submit" value="Add Bookmark">
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
